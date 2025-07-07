@@ -2,49 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Omar Khaliid | Data Analyst</title>
+  <title>Omar Khalid | Data Analyst</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      background: #f4f4f4;
+      background: #fff;
       color: #333;
     }
     h1 {
-      color: #0a66c2;
+      font-size: 32px;
     }
-    ul {
-      line-height: 1.8;
+    h2 {
+      margin-top: 40px;
+    }
+    img.profile {
+      border-radius: 12px;
+      width: 200px;
+      margin: 20px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .card {
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card a {
+      text-decoration: none;
+      color: #0a66c2;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <h1>👋 Hi, I'm Omar</h1>
+
+  <h1>👋 Hi, I’m Omar</h1>
+
+  <img src="omar-profile.jpg" alt="Omar Khalid" class="profile">
+
   <p>A Data Analyst passionate about transforming raw data into impactful visual stories.</p>
-  
+
   <h2>🛠 Tools & Skills</h2>
   <ul>
-    <li>Power BI & DAX</li>
-    <li>SQL</li>
-    <li>Python for Data Analysis</li>
-    <li>Tableau</li>
+    <li><strong>Power BI & DAX</strong></li>
+    <li><strong>SQL</strong></li>
+    <li><strong>Python for Data Analysis</strong></li>
+    <li><strong>Tableau</strong></li>
   </ul>
 
   <h2>📂 Projects</h2>
-  <ul>
-    <li><a href="https://github.com/Omarkhaliid98/Retail-Intelligence-Dashboard" target="_blank">Retail Intelligence Dashboard</a></li>
-  </ul>
+
+  <div class="grid">
+    <div class="card">
+      <img src="dashboard-screenshot.png" alt="Retail Dashboard">
+      <a href="https://github.com/Omarkhaliid98/Retail-Intelligence-Dashboard" target="_blank">Retail Intelligence Dashboard</a>
+    </div>
+    <div class="card">
+      <img src="sun_cover.png" alt="Sun Dashboard">
+      <a href="https://github.com/Omarkhaliid98/Sun-International-Pricing-Dashboard" target="_blank">Sun International Pricing Dashboard</a>
+    </div>
+  </div>
 
   <h2>📬 Contact</h2>
   <ul>
     <li><a href="https://www.linkedin.com/in/omarkhaliid/" target="_blank">LinkedIn</a></li>
     <li>Email: omarkhaliid98@gmail.com</li>
   </ul>
-  <li>
-  <a href="https://github.com/Omarkhaliid98/Sun-International-Pricing-Dashboard" target="_blank">
-    <img src="sun_cover.png" width="300"><br>
-    Sun International Pricing Dashboard
-  </a>
-</li>
+
 </body>
 </html>
