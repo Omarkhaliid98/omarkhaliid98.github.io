@@ -2,37 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omar Khalid | Data Analyst</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #fff;
+      margin: 0;
+      padding: 40px;
+      background: #f9f9f9;
       color: #333;
     }
+    h1, h2 {
+      text-align: center;
+    }
     h1 {
-      font-size: 32px;
+      font-size: 36px;
     }
     h2 {
-      margin-top: 40px;
+      margin-top: 50px;
     }
-    img.profile {
+    .center {
+      text-align: center;
+    }
+    .profile-img {
+      display: block;
+      margin: 20px auto;
       border-radius: 12px;
-      width: 200px;
-      margin: 20px 0;
+      width: 180px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    ul li {
+      margin-bottom: 10px;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
     .card {
       text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
     }
     .card img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
     }
     .card a {
       text-decoration: none;
@@ -42,26 +69,46 @@
       margin-top: 10px;
       font-size: 16px;
     }
+    .contact-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .contact-links a {
+      color: #0a66c2;
+      font-weight: bold;
+      display: inline-block;
+      margin: 5px 10px;
+      text-decoration: none;
+    }
+    .cv-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #0a66c2;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .cv-btn:hover {
+      background: #004b99;
+    }
   </style>
 </head>
 <body>
 
   <h1>👋 Hi, I’m Omar</h1>
-
-  <img src="omar-profile.jpg" alt="Omar Khalid" class="profile">
-
-  <p>A Data Analyst passionate about transforming raw data into impactful visual stories.</p>
+  <img src="omar-profile.jpg" alt="Omar Khalid" class="profile-img">
+  <p class="center">A Data Analyst passionate about transforming raw data into impactful visual stories using Power BI, SQL, Python, and Tableau.</p>
 
   <h2>🛠 Tools & Skills</h2>
   <ul>
-    <li><strong>Power BI & DAX</strong></li>
-    <li><strong>SQL</strong></li>
-    <li><strong>Python for Data Analysis</strong></li>
-    <li><strong>Tableau</strong></li>
+    <li>📊 Power BI & DAX</li>
+    <li>🧠 SQL</li>
+    <li>🐍 Python for Data Analysis</li>
+    <li>📈 Tableau</li>
   </ul>
 
   <h2>📂 Projects</h2>
-
   <div class="grid">
     <div class="card">
       <img src="dashboard-screenshot.png" alt="Retail Dashboard">
@@ -74,10 +121,11 @@
   </div>
 
   <h2>📬 Contact</h2>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/omarkhaliid/" target="_blank">LinkedIn</a></li>
-    <li>Email: omarkhaliid98@gmail.com</li>
-  </ul>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/omarkhaliid/" target="_blank">LinkedIn</a>
+    <a href="mailto:omarkhaliid98@gmail.com">omarkhaliid98@gmail.com</a><br>
+    <a class="cv-btn" href="omar-cv.pdf" target="_blank">📄 Download My CV</a>
+  </div>
 
 </body>
 </html>
